@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  height: 50px;
+  background-color: #002580;
+  display: flex;
+  justify-content: center;
+}
+
+.navcontiner {
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 500;
+}
+
+.navbtn {
+  margin-left: 20px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #002580;
+}
+
+.headerList {
+  background-color:#002580;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.headerContiner {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0px 100px 0px;
+}
+
+/* some code */
+.headerContainer.listMode {
+  margin: 20px 0px 0px 0px;
+}
+
+/* some code */
+
+.headerItem {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.listItem.Active {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.headerdesc {
+  margin: 20px 0px;
+}
+
+.headerbtn {
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.headerSearch {
+  height: 30px;
+  border: 3px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  color: black;
+  width: 100%;
+  max-width: 1024px;
+  padding: 10px 0px;
+  position: absolute;
+  bottom: -25px;
+}
+
+#icon {
+  color: lightgray;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.hedaerInput {
+  border: none;
+  outline: none;
+}
+
+.hedaerText {
+  color: lightgray;
+  cursor: pointer;
+}
+
+#daterange {
+  cursor: pointer;
+  color: lightgray;
+}
+
+.inputBtn {
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+.inputBtn a{
+  color: white;
+  text-decoration: none;
+}
+
+.option {
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: gray;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionContiner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 0 10px 0 10px;
+  background-color: white;
+  color: #0071c2;
+  border-color: #0071c2;
+  display: flex;
+  align-items: center;
+}
+
+#optionsContainer {
+  display: none;
+}
+
+.homeContiner {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.featured {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 1;
+}
+
+.featuredItems {
+  position: relative;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 250px;
+  flex: 1;
+}
+
+.featuredImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featuredTitels {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.homeTitle {
+  width: 1024px;
+  font-size: 20px;
+}
+
+.homeTitle {
+  width: 1024px;
+  font-size: 20px;
+}
+
+/* futureProperty */
+
+.pList{
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.pListItem{
+  flex:1;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.pListImg{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.pListTitles>h1{
+  font-size: 18px;
+  color: #444;
+}
+
+.pListTitles>h2{
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* future property */
+.futureProperty {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.propertyItems{
+  flex: 1;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.propertyImg{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.pName{
+  color: #333;
+  font-weight: bold;
+}
+
+.pCity{
+  font-weight: 300;
+}
+
+.pPrice{
+  font-weight: 500;
+}
+
+.pRating>button{
+  background-color: #003580;
+  color: white;
+  border: none;
+  padding: 3px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.pRating>span{
+  font-size: 14px;
+}
+
+/* mail */
+.mail{
+  width: 100%;
+  margin-top: 50px;
+  background-color: #003580;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0px 50px 0px;
+}
+
+.mailInputContainer>input{
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.mailInputContainer>button{
+  height: 50px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* footer */
+
+.footer{
+  width: 100%;
+  width: 1024px;
+  font-size: 12px;
+}
+
+.fLists{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.fList{
+  list-style: none;
+  padding: 0;
+}
+
+.fListItem{
+  margin-bottom: 10px;
+  color: #003580;
+  cursor: pointer;
+}
+/* list page */
+
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.listWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+}
+
+.listSearch {
+  flex: 1;
+  background-color: #febb02;
+  padding: 10px;
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+  height: max-content;
+}
+
+.lsTitle{
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.lsItem{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.lsItem>label{
+  font-size: 12px;
+}
+
+.lsItem>input{
+  height: 30px;
+  border: none;
+  padding: 5px;
+}
+.lsItem>span{
+  height: 30px;
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lsOptions{
+  padding: 10px;
+}
+
+.lsOptionItem{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 12px;
+}
+
+.lsOptionInput{
+  width: 50px;
+}
+
+.listSearch>button{
+  padding: 10px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.listResult {
+  flex: 3;
+}

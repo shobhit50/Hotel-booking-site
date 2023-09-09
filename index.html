@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      MyProject | The best hotels, flights, car rentals &amp; accommodations
+    </title>
+    <link
+      rel="icon"
+      href="https://cf.bstatic.com/static/img/apple-touch-icon/5db9fd30d96b1796883ee94be7dddce50b73bb38.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <nav class="navcontiner">
+        <span class="logo">Hotel Booking</span>
+        <div class="navItem">
+          <button class="navbtn">Register</button>
+          <button class="navbtn">login</button>
+        </div>
+      </nav>
+    </nav>
+
+    <!-- header     -->
+    <header class="headerList">
+          <div id="headerContainer" class="headerContiner">
+            <div class="headerItem">
+              <div class="listItem Active">
+                <i id="1btn" class="fa-solid fa-bed"></i>
+                <span>stay</span>
+              </div>
+              <div class="listItem">
+                <i class="fa-solid fa-jet-fighter"></i>
+                <span>Flight</span>
+              </div>
+              <div class="listItem">
+                <i class="fa-solid fa-car"></i>
+                <span>Car rentals</span>
+              </div>
+              <div class="listItem">
+                <i id="1btn" class="fa-solid fa-bed"></i>
+                <span>Attractions</span>
+              </div>
+              <div class="listItem">
+                <i class="fa-solid fa-taxi"></i>
+                <span>Airport taxis</span>
+              </div>
+            </div>
+            <h1 class="headingList">A lifetyime of discounts? It's Genius</h1>
+            <p class="headerdesc">
+              Get rewarded for your travels - unlock instant saving of 10% or
+              more with a free Hotel booking account
+            </p>
+            <button class="headerbtn">Sing in / Register</button>
+            <div class="headerSearch">
+              <div class="headerSearchItem">
+                <i id="icon" class="fa-solid fa-bed"></i>
+                <input
+                  type="text"
+                  placeholder="Where are you going"
+                  class="hedaerInput"
+                />
+              </div>
+              <div class="headerSearchItem">
+                <i id="icon" class="fa-solid fa-calendar-days"></i>
+
+                <input
+                  id="daterange"
+                  type="text"
+                  name="daterange"
+                  value="01/01/2023 - 02/01/2023"
+                  class="hedaerInput"
+                />
+                <!-- <span class="hedaerText">Strtdate to Enddate</span> -->
+              </div>
+              <div class="headerSearchItem">
+                <i id="icon" class="fa-solid fa-person"></i>
+                <span class="hedaerText" id="guestsText"
+                  >1 adults 0 children 1 room</span
+                >
+                <!-- this is option -->
+                <div class="option" id="optionsContainer">
+                  <div class="optionItem">
+                    <span class="optinText">Adults</span>
+                    <div class="optionContiner">
+                      <button class="btn" id="increaseAdults">+</button>
+                      <span class="hedaerText" id="adultsCount">1</span>
+                      <button class="btn" id="decreaseAdults">-</button>
+                    </div>
+                  </div>
+                  <div class="optionItem">
+                    <span class="optinText">Children</span>
+                    <div class="optionContiner">
+                      <button class="btn" id="increaseChildren">+</button>
+                      <span class="hedaerText" id="childrenCount">0</span>
+                      <button class="btn" id="decreaseChildren">-</button>
+                    </div>
+                  </div>
+                  <div class="optionItem">
+                    <span class="optinText">Rooom</span>
+                    <div class="optionContiner">
+                      <button class="btn" id="increaseroomCount">+</button>
+                      <span class="hedaerText" id="roomCount">1</span>
+                      <button class="btn" id="decreaseroomCount">-</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <span class="hedaerText">adults 2 children 1 room</span> -->
+              </div>
+              <button class="inputBtn">
+                <a href="list.html">Searrch</a>
+                </button>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <!-- for testing edit header postion -->
+
+    <div class="homeContiner">
+      <div class="featured">
+        <div class="featuredItems">
+          <img
+            src="https://cf.bstatic.com/xdata/images/city/max500/957801.webp?k=a969e39bcd40cdcc21786ba92826063e3cb09bf307bcfeac2aa392b838e9b7a5&o="
+            alt=""
+            class="featuredImg"
+          />
+          <div class="featuredTitels">
+            <h1>Dublin</h1>
+            <h2>123 properties</h2>
+          </div>
+        </div>
+        <div class="featuredItems">
+          <img
+            src="https://cf.bstatic.com/xdata/images/city/max500/690334.webp?k=b99df435f06a15a1568ddd5f55d239507c0156985577681ab91274f917af6dbb&o="
+            alt=""
+            class="featuredImg"
+          />
+          <div class="featuredTitels">
+            <h1>Reno</h1>
+            <h2>532 properties</h2>
+          </div>
+        </div>
+        <div class="featuredItems">
+          <img
+            src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
+            alt=""
+            class="featuredImg"
+          />
+          <div class="featuredTitels">
+            <h1>Austin</h1>
+            <h2>533 properties</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- properties list Items -->
+      <h1 class="homeTitle">Browse by property type</h1>
+      <!-- property list -->
+      <div class="pList">
+        <div class="pListItem">
+          <img
+            src="https://cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o="
+            alt=""
+            class="pListImg"
+          />
+          <div class="pListTitles">
+            <h1>Hotels</h1>
+            <h2>233 hotels</h2>
+          </div>
+        </div>
+        <div class="pListItem">
+          <img
+            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-apartments_300/9f60235dc09a3ac3f0a93adbc901c61ecd1ce72e.jpg"
+            alt=""
+            class="pListImg"
+          />
+          <div class="pListTitles">
+            <h1>Apartments</h1>
+            <h2>2331 hotels</h2>
+          </div>
+        </div>
+        <div class="pListItem">
+          <img
+            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/bg_resorts/6f87c6143fbd51a0bb5d15ca3b9cf84211ab0884.jpg"
+            alt=""
+            class="pListImg"
+          />
+          <div class="pListTitles">
+            <h1>Resorts</h1>
+            <h2>2331 hotels</h2>
+          </div>
+        </div>
+        <div class="pListItem">
+          <img
+            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-villas_300/dd0d7f8202676306a661aa4f0cf1ffab31286211.jpg"
+            alt=""
+            class="pListImg"
+          />
+          <div class="pListTitles">
+            <h1>Villas</h1>
+            <h2>2331 hotels</h2>
+          </div>
+        </div>
+        <div class="pListItem">
+          <img
+            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg"
+            alt=""
+            class="pListImg"
+          />
+          <div class="pListTitles">
+            <h1>Cabins</h1>
+            <h2>2331 hotels</h2>
+          </div>
+        </div>
+      </div>
+      <!-- closee list -->
+      <!-- Future Property -->
+      <h1 class="homeTitle">Homes guests love</h1>
+      <div class="futureProperty">
+        <div class="propertyItems">
+          <img
+            src="https://cf.bstatic.com/xdata/images/hotel/square600/13125860.webp?k=e148feeb802ac3d28d1391dad9e4cf1e12d9231f897d0b53ca067bde8a9d3355&o=&s=1"
+            alt=""
+            class="propertyImg"
+          />
+          <span class="pName">Aparthotel Stare Miasto</span>
+          <span class="pCity">Madrid</span>
+          <span class="pRating">Starting from $120</span>
+          <div class="pRating">
+            <button>8.9</button>
+            <span>Excellent</span>
+          </div>
+        </div>
+        <!-- secnde -->
+        <div class="propertyItems">
+          <img
+            src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/215955381.jpg?k=ff739d1d9e0c8e233f78ee3ced82743ef0355e925df8db7135d83b55a00ca07a&o=&hp=1"
+            alt=""
+            class="propertyImg"
+          />
+          <span class="pName">Comfort Suites Airport</span>
+          <span class="pCity">Austin</span>
+          <span class="pRating">Starting from $140</span>
+          <div class="pRating">
+            <button>9.3</button>
+            <span>Excellent</span>
+          </div>
+        </div>
+
+        <!--  third item -->
+
+        <div class="propertyItems">
+          <img
+            src="https://e0.pxfuel.com/wallpapers/781/994/desktop-wallpaper-lisbon-portugal-portgual-cities-europe-lisbon.jpg"
+            alt=""
+            class="propertyImg"
+          />
+          <span class="pName">Four Seasons Hotel</span>
+          <span class="pCity">Lisbon</span>
+          <span class="pRating">Starting from $99</span>
+          <div class="pRating">
+            <button>8.8</button>
+            <span>Excellent</span>
+          </div>
+        </div>
+
+        <!-- fourth item -->
+        <div class="propertyItems">
+          <img
+            src="https://images4.alphacoders.com/552/552459.jpg"
+            alt=""
+            class="propertyImg"
+          />
+          <span class="pName">Hilton Garden Inn</span>
+          <span class="pCity">Berlin</span>
+          <span class="pRating">Starting from $105</span>
+          <div class="pRating">
+            <button>8.9</button>
+            <span>Excellent</span>
+          </div>
+        </div>
+      </div>
+      <!-- close featured property -->
+
+      <!-- mail -->
+      <div class="mail">
+        <h1 class="mailTitle">Save time, save money!</h1>
+        <span class="mailDesc"
+          >Sign up and we'll send the best deals to you</span
+        >
+        <div class="mailInputContainer">
+          <input type="text" placeholder="Your Email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <!-- maiL closse -->
+      <!-- footer -->
+      <div class="footer">
+        <div class="fLists">
+          <ul class="fList">
+            <li class="fListItem">Countries</li>
+            <li class="fListItem">Regions</li>
+            <li class="fListItem">Cities</li>
+            <li class="fListItem">Districts</li>
+            <li class="fListItem">Airports</li>
+            <li class="fListItem">Hotels</li>
+          </ul>
+          <ul class="fList">
+            <li class="fListItem">Homes</li>
+            <li class="fListItem">Apartments</li>
+            <li class="fListItem">Resorts</li>
+            <li class="fListItem">Villas</li>
+            <li class="fListItem">Hostels</li>
+            <li class="fListItem">Guest houses</li>
+          </ul>
+          <ul class="fList">
+            <li class="fListItem">Unique places to stay</li>
+            <li class="fListItem">Reviews</li>
+            <li class="fListItem">Unpacked: Travel articles</li>
+            <li class="fListItem">Travel communities</li>
+            <li class="fListItem">Seasonal and holiday deals</li>
+          </ul>
+          <ul class="fList">
+            <li class="fListItem">Car rental</li>
+            <li class="fListItem">Flight Finder</li>
+            <li class="fListItem">Restaurant reservations</li>
+            <li class="fListItem">Travel Agents</li>
+          </ul>
+          <ul class="fList">
+            <li class="fListItem">Curtomer Service</li>
+            <li class="fListItem">Partner Help</li>
+            <li class="fListItem">Careers</li>
+            <li class="fListItem">Sustainability</li>
+            <li class="fListItem">Press center</li>
+            <li class="fListItem">Safety Resource Center</li>
+            <li class="fListItem">Investor relations</li>
+            <li class="fListItem">Terms & conditions</li>
+          </ul>
+        </div>
+        <div class="fText">Copyright © 2023 MyProject.</div>
+      </div>
+
+      <!-- Footer closs -->
+    </div>
+
+    <!-- here hader postion after div-->
+
+    <script src="app.js"></script>
+  </body>
+</html>

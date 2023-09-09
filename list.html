@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://cf.bstatic.com/static/img/apple-touch-icon/5db9fd30d96b1796883ee94be7dddce50b73bb38.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+  </head>
+  <body>
+    <div>
+      <nav>
+        <!-- Navbar content -->
+      </nav>
+      <header>
+        <!-- Header content with type="list" -->
+      </header>
+      <div class="listContainer">
+        <div class="listWrapper">
+          <div class="listSearch">
+            <h1 class="lsTitle">Search</h1>
+            <div class="lsItem">
+              <label for="destination">Destination</label>
+              <input
+                id="destination"
+                placeholder="Enter destination"
+                type="text"
+              />
+            </div>
+            <div class="lsItem">
+              <label for="checkin">Check-in Date</label>
+              <span id="checkin">MM/dd/yyyy to MM/dd/yyyy</span>
+              <!-- DateRange component will be replaced with HTML input elements -->
+            </div>
+            <div class="lsItem">
+              <label for="min-price">Min price <small>per night</small></label>
+              <input id="min-price" type="number" class="lsOptionInput" />
+            </div>
+            <div class="lsItem">
+              <label for="max-price">Max price <small>per night</small></label>
+              <input id="max-price" type="number" class="lsOptionInput" />
+            </div>
+            <div class="lsItem">
+              <label for="adult">Adult</label>
+              <input id="adult" type="number" min="1" class="lsOptionInput" />
+            </div>
+            <div class="lsItem">
+              <label for="children">Children</label>
+              <input
+                id="children"
+                type="number"
+                min="0"
+                class="lsOptionInput"
+              />
+            </div>
+            <div class="lsItem">
+              <label for="room">Room</label>
+              <input id="room" type="number" min="1" class="lsOptionInput" />
+            </div>
+            <button>Search</button>
+          </div>
+          <div class="listResult">
+            <!-- SearchItem components or content -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
